@@ -1,0 +1,26 @@
+
+<section id="assets">
+  <div class="container portfolio-flex-grid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Assets</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="portfolio-flex-row">
+      {% assign ids = "1,2,3,4,5,6,7,8,9" | split: "," %}
+      {% for id in ids %}
+      <div class="portfolio-flex-item portfolio-item">
+        <a href="" class="portfolio-link" data-toggle="modal">
+          <div style="margin-bottom: 20px;" class="caption">
+            <div class="caption-content">
+              
+            </div>
+          </div>
+          <img style="border-radius: 10%;" src="img/assets/{{ id }}.png"  class="img-responsive" alt="">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
